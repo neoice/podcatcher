@@ -202,10 +202,6 @@ Options:
                                      player devices.
                                      Enabled by default.
 
-        --[no-]vote                  Automatically vote for the downloaded
-                                     podcasts at podcatcherstats.com.
-                                     Enabled by default.
-
     -A, --arguments FILENAME_OR_URL  Read arguments from specified file.
                                      Rules:
                                      * accepts one argument per line,
