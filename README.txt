@@ -202,10 +202,6 @@ Options:
                                      player devices.
                                      Enabled by default.
 
-        --[no-]checkforupdate        Check once every 6 months if a newer 
-                                     version is available and display an 
-                                     informational message. Enabled by default.
-
         --[no-]vote                  Automatically vote for the downloaded
                                      podcasts at podcatcherstats.com.
                                      Enabled by default.
