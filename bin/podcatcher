@@ -82,7 +82,6 @@ include REXML
 PODCATCHER_ENV = :production
 
 USER_AGENT = "podcatcher/#{PODCATCHER_VERSION} Ruby/#{RUBY_VERSION} #{RUBY_PLATFORM}"
-UPDATE_CHECK_INTERVAL = 6 #months
 
 opt = OpenStruct.new
 opt.PLAYLIST_TYPES = [:m3u, :smil, :pls, :asx, :tox, :xspf]
@@ -2090,10 +2089,6 @@ opt.upload_rate *= 1024 if opt.upload_rate
 opt.itemsize *= 1_000_000 
 arguments = arguments + ARGV
 
-unless opt.check_for_update
-	$stderr.puts "Disabling update check." if opt.verbose
-end
-
 
 begin 
 	require "rubytorrent"
@@ -2110,11 +2105,6 @@ if opt.function == :download
 elsif opt.function == :search
 	dir = Query.new opt, arguments.shift
 	dir.search arguments
-end
-
-if opt.check_for_update
-	update = Update.new opt.dir
-	update.check
 end
 
 $stderr.puts "End of podcatching session." if opt.verbose
