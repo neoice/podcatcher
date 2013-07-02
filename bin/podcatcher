@@ -2505,24 +2505,6 @@ if opt.check_for_update
 	update.check
 end
 
-if opt.verbose
-        $stderr.puts ""
-        $stderr.puts "   *********************************************************************"
-        $stderr.puts "   ****   Qworum - A platform for web-based services      (sponsor) ****"
-        $stderr.puts "   *********************************************************************"
-        $stderr.puts "   ****   Sell and buy services:                                    ****"
-        $stderr.puts "   ****   Host services on your own domain; sell them to websites   ****"
-        $stderr.puts "   ****   or businesses on the service marketplace.                 ****"
-        $stderr.puts "   ****                                                             ****"
-        $stderr.puts "   ****   Build enterprise information systems:                     ****"
-        $stderr.puts "   ****   Use Qworum in your information system, and enjoy the      ****"
-        $stderr.puts "   ****   benefits of a powerful SOA technology.                    ****"
-        $stderr.puts "   ****                                                             ****"
-        $stderr.puts "   ****   Learn more at http://www.qworum.com/                      ****"
-        $stderr.puts "   *********************************************************************"
-        $stderr.puts ""
-end
-
 $stderr.puts "End of podcatching session." if opt.verbose
 
 
